@@ -15,6 +15,7 @@ using ServiceStack.OrmLite;
 using ServiceStack.RabbitMq;
 using ServiceStack.Razor;
 using ServiceStack.Validation;
+using System.Collections.Generic;
 
 namespace EmailContacts
 {
@@ -43,7 +44,8 @@ namespace EmailContacts
 
                 db.Insert(new Contact { Name = "Kurt Cobain", Email = "demo+kurt@servicestack.net", Age = 27 });
                 db.Insert(new Contact { Name = "Jimi Hendrix", Email = "demo+jimi@servicestack.net", Age = 27 });
-                db.Insert(new Contact { Name = "Michael Jackson", Email = "demo+mike@servicestack.net", Age = 50 });
+                db.Insert(new Contact { Name = "Michael Jackson", Email = "demo+mike@servicestack.net", Age = 50, 
+					Tags = new List<AvailableTags>( new AvailableTags[] { AvailableTags.glam }) });
             }
 
             UseDbEmailer(container);

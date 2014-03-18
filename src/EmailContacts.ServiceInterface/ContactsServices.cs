@@ -42,5 +42,11 @@ namespace EmailContacts.ServiceInterface
         {
             Db.DeleteById<Contact>(request.Id);
         }
+		
+		public List<Contact> Any(FindSpecialContacts request)
+        {
+            var contacts = Db.Select<Contact>(C => C.Tags.Contains(AvailableTags.glam));
+            return contacts;
+        }
     }
 }

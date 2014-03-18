@@ -44,4 +44,10 @@ namespace EmailContacts.ServiceModel
     {
         public int Id { get; set; }
     }
+	
+	[Route("/contacts/special", "GET")]
+    public class FindSpecialContacts : IReturn<List<Contact>>
+    {
+        
+    }
 }
