@@ -17,7 +17,7 @@ namespace EmailContacts.Tests
         [Test]
         public void Can_call_with_JsonServiceClient()
         {
-            client.Post(new CreateContact { Name = "Unit Test", Email = "demo+unit@servicestack.net", Age = 27 });
+            client.Post(new CreateContact { FirstName = "Unit", LastName = "Test", Email = "demo+unit@servicestack.net", Age = 27 });
 
             Contact contact = client.Get(new GetContact { Id = 1 });
 

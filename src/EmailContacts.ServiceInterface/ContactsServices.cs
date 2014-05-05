@@ -11,12 +11,12 @@ namespace EmailContacts.ServiceInterface
     {
         public CotntactsValidator()
         {
-            RuleFor(x => x.Name).NotEmpty().WithMessage("A Name is what's needed.");
+            RuleFor(x => x.FirstName).NotEmpty().WithMessage("A Name is what's needed.");
             RuleFor(x => x.Email).NotEmpty().EmailAddress();
             RuleFor(x => x.Age).GreaterThan(0);
         }
     }
-
+		
     public class ContactsServices : Service
     {
         public Contact Any(GetContact request)
@@ -33,7 +33,14 @@ namespace EmailContacts.ServiceInterface
 
         public Contact Post(CreateContact request)
         {
-            var contact = request.ConvertTo<Contact>();
+            //var contact = request.ConvertTo<Contact>();
+			
+			var contact = new Contact() {
+				FullName = new NameDetail(request.FirstName, request.LastName),
+				Email = request.Email,
+				Age = request.Age
+			};
+			
             Db.Save(contact);
             return contact;
         }

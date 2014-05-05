@@ -30,7 +30,7 @@ namespace EmailContacts.Tests
                         db.DropAndCreateTable<Contact>();
                         db.DropAndCreateTable<Email>();
 
-                        db.Insert(new Contact { Name = "Test Contact", Email = "test@email.com", Age = 10 });
+                        db.Insert(new Contact { FullName = new NameDetail("Test", "Contact"), Email = "test@email.com", Age = 10 });
                     }
                 }
             }

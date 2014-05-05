@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmailContacts/Global.asax.cs">
+    <Files>
+      <File FileName="EmailContacts/Global.asax.cs" Line="1" Column="1" />
+      <File FileName="EmailContacts/Web.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../pM/pM.Api/Financial/Receipts/RentInvoiceCalculator.cs" line="61" offsetX="280" offsetY="900" expression="credit" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Financial/Receipts/RentCalculator.cs" line="61" offsetX="446" offsetY="900" expression="Lease.PaidTo" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Calc/RentCalc.cs" line="46" offsetX="446" offsetY="675" expression="nextDate" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Calc/RentCalc.cs" line="46" offsetX="710" offsetY="675" expression="toDate" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Calc/RentCalc.cs" line="48" offsetX="573" offsetY="709" expression="arrears" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Financial/TenantReceipts/Save.cs" line="44" offsetX="446" offsetY="645" expression="tenantReceipt.Amount" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Financial/BankRecs/Prepare.cs" line="153" offsetX="533" offsetY="2280" expression="toPostingNumber" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Financial/BankRecs/Prepare.cs" line="96" offsetX="468" offsetY="1425" expression="rec.ToJournal" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Financial/BankRecs/Prepare.cs" line="107" offsetX="887" offsetY="1590" expression="toPostingNumber" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Billing/Customers/Clone.cs" line="156" offsetX="634" offsetY="2325" expression="fkColumns" liveUpdate="False" />
+    <Watch file="../../../pM/pM.Api/Common/DataTable.cs" line="95" offsetX="764" offsetY="1410" expression="prop" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

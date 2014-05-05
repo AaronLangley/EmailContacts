@@ -47,8 +47,9 @@
         <form id="form-addcontact" action="@(new CreateContact().ToPostUrl())" method="POST">
             <div class="row">
                 <div class="col-sm-3 form-group">
-                    <label for="Name">Name</label>
-                    <input class="form-control input-sm" type="text" id="Name" name="Name" value="" placeholder="">
+                    <label for="FirstName">Name</label>
+                    <input class="form-control input-sm" type="text" id="FirstName" name="FirstName" value="" placeholder="First">
+                    <input class="form-control input-sm" type="text" id="LastName" name="LastName" value="" placeholder="Last">
                     <span class="help-block"></span>
                 </div>
                 <div class="col-sm-3 form-group">
