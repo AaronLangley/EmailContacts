@@ -2,8 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="EmailContacts/Global.asax.cs">
     <Files>
-      <File FileName="EmailContacts/Global.asax.cs" Line="1" Column="1" />
+      <File FileName="EmailContacts/Global.asax.cs" Line="53" Column="11" />
       <File FileName="EmailContacts/Web.config" Line="1" Column="1" />
+      <File FileName="EmailContacts.ServiceInterface/ContactsServices.cs" Line="38" Column="25" />
+      <File FileName="EmailContacts.ServiceModel/Types/Contact.cs" Line="27" Column="4" />
+      <File FileName="EmailContacts/Views/GetContact.cshtml" Line="5" Column="26" />
+      <File FileName="EmailContacts/default.cshtml" Line="53" Column="51" />
+      <File FileName="EmailContacts.Tests/IntegrationTests.cs" Line="10" Column="21" />
+      <File FileName="EmailContacts.ServiceModel/Contacts.cs" Line="24" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

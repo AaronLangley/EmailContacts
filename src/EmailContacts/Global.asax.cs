@@ -29,6 +29,9 @@ namespace EmailContacts
             Plugins.Add(new RazorFormat());
             Plugins.Add(new RequestLogsFeature());
 
+            Plugins.Add(new PostmanFeature());
+            Plugins.Add(new CorsFeature());
+
             Plugins.Add(new ValidationFeature());
             container.RegisterValidators(typeof(ContactsServices).Assembly);
 
