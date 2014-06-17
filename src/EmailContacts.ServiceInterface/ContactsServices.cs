@@ -4,6 +4,7 @@ using EmailContacts.ServiceModel.Types;
 using ServiceStack;
 using ServiceStack.FluentValidation;
 using ServiceStack.OrmLite;
+using ServiceStack.MiniProfiler;
 
 namespace EmailContacts.ServiceInterface
 {
@@ -26,9 +27,14 @@ namespace EmailContacts.ServiceInterface
 
         public List<Contact> Any(FindContacts request)
         {
-            return request.Age != null
-                ? Db.Select<Contact>(q => q.Age == request.Age)
-                : Db.Select<Contact>();
+			using ( Profiler.Current.Step("Contacts Service"))
+			{
+	        	System.Threading.Thread.Sleep(1000);
+
+	            return request.Age != null
+	                ? Db.Select<Contact>(q => q.Age == request.Age)
+	                : Db.Select<Contact>();
+	        }
         }
 
         public Contact Post(CreateContact request)

@@ -25,12 +25,16 @@ namespace EmailContacts
 
         public override void Configure(Container container)
         {
-            Plugins.Add(new SwaggerFeature());
+        	Config.DebugMode = true;
+
+//            Plugins.Add(new SwaggerFeature());
             Plugins.Add(new RazorFormat());
+			Plugins.Add(new MetadataFeature());
+            
             Plugins.Add(new RequestLogsFeature());
 
-            Plugins.Add(new PostmanFeature());
-            Plugins.Add(new CorsFeature());
+//            Plugins.Add(new PostmanFeature());
+//            Plugins.Add(new CorsFeature());
 
             Plugins.Add(new ValidationFeature());
             container.RegisterValidators(typeof(ContactsServices).Assembly);
